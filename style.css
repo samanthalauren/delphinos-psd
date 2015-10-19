@@ -1,0 +1,568 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* GENERAL STYLES */
+
+.content-wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 65%;
+}
+.wrapper p {
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: .6rem;
+	letter-spacing: .25rem;
+}
+
+/*NAVIGATION*/
+nav {
+	background:white;
+	width: 100%;
+	border-bottom: 1px solid #f2f2f2;
+}
+nav img {
+	margin-top: 11px;
+	margin-left: 0px; 
+	max-width: 14%;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+nav ul li {
+	float: left;
+}
+nav ul a {
+	padding: 10px 14px;
+	display: block;
+	text-decoration: none;
+	color: lightgrey;
+	text-transform: uppercase;
+	font-family: 'Montserrat' sans-serif;
+	font-weight: 400;
+	font-size: .3rem;
+	letter-spacing: .15rem; 
+}
+nav ul a:hover {
+	color: white;
+	background: lightgrey;
+}
+.search li{
+	border-right: 1px solid #f2f2f2;
+	float: left;
+	margin: 0%;
+	padding: 12px 25px;
+}
+.tools li {
+	float: left;
+	margin: 0px;
+	padding: 11px 0px;
+}
+.topNav p {
+	margin: 0 auto;
+	float: left;
+	color: darkgrey;
+	font-family: 'Montserrat' sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+}
+.tools p {
+	text-transform: uppercase;
+	padding: 4px 19px;
+	margin: 0 10px;
+	border-left: 1px solid #f2f2f2;
+	font-family: 'Montserrat' sans-serif;
+	font-size: 10px;
+	font-weight: 100;
+	color: lightgrey;
+}
+.three {
+	background: #f2f2f2;
+	margin: 0px 30px 0px -12px;
+	padding:0px 8px;
+	font-size: 13px;
+}
+
+.four {
+	border:1px solid black;
+	margin: 0px 17px 0px -14px;
+	padding: 0px 7px;
+	font-size: 13px;
+}
+.menuTwo {
+	padding: 15px 5px;
+}
+
+.topNav {
+	float: left;
+	margin: 0
+}
+/* MAIN PAGE */
+header {
+	background:url(assets/mainLP-hero.jpg) no-repeat top;
+	height: 100vh;
+	width: 100%;
+	background-size: 100% 90%;
+	padding-top: 30px;
+	text-align: center;
+	margin-bottom: -35px;
+	clear: both;
+}
+h1 {
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	font-size: 1.75rem;
+	font-weight: 400;
+	padding-top: 190px;
+	letter-spacing: .45rem;
+
+}
+h2 {
+	font-family: 'Montserrat' sans-serif;
+	font-size: .5rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	width: 17%;
+	float: left;
+	margin-left: 40%;
+}
+.products {
+	max-width: 70%;
+	margin: 1%;
+	padding: 0;
+}
+
+.box:nth-child(even){
+	float: right;
+}
+
+.box {
+	width: 25%;
+	height: 383px;
+	color: white;
+	margin: 1%;
+	padding:0;
+	float: left;
+}
+.icon{
+	margin-top: 60%;
+	margin-left: 38%;
+	margin-bottom: 10px;
+}
+.boxOne {
+	background-color:#c6daa3;
+}
+.boxTwo {
+	background-color: #f3d88c;
+}
+.boxThree{
+	background-color: #b3d2ea;
+}
+.boxFour {
+	background-color: #f08660;
+}
+.boxFive {
+	background-color: #bce5d3;
+}
+.clients li {
+	float: left;
+	list-style: none;
+	margin: 5% 2.5%;
+}
+
+/* PRODUCT PAGE */
+
+.infoBar {
+	background: lightgrey;
+	height: 150px;
+	margin-bottom: 60px;
+}
+.infoBar p {
+	margin: ;
+	background: lightgrey;
+	font-family: 'Roboto Slab', serif;
+	float: right;
+	text-transform: uppercase;
+	padding-right: 235px;
+	padding-top: 50px;
+	letter-spacing: 2px;
+}
+p.tiny {
+	font-family: 'Source Sans Pro', sans-serif;
+	float: left;
+	font-size: 10px;
+	font-weight: 100;
+	color: darkgrey;
+	letter-spacing: 3px;
+	padding-left: 235px;
+	padding-top: 57px;
+	text-transform: capitalize;
+}
+.sortBar p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 9px;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	float: left;
+}
+.sortFirst {
+	margin-right: 50px;
+}
+.pushRight {
+	margin-left: 280px;
+}
+
+/*SIDEBAR PRODUCT PAGE*/
+
+.sidebar {
+	width: 15%;
+	float: left;
+	padding: 0;
+}
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+.sidebar li {
+	padding: 0;
+}
+.sidebar h3 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+.sidebar p {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: left;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	margin: 16px 0;
+}
+
+/*IMAGES PRODUCT PAGE*/
+
+.productImages {
+	width: 80%;
+	float: right;
+} 
+.productImages img {
+	width: 50%;
+	float: left;
+}
+.gallery{
+	padding: 0;
+}
+.gallery li{
+	width: 50%;
+	padding: 10px;
+	float: left;
+	list-style: none;
+	position: relative;
+}
+.gallery li img{
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+}
+p.caption{
+	text-transform: capitalize;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 12px;
+}
+p.price {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: darkgrey;
+	letter-spacing: 1px;
+	font-size: 12px;
+}
+
+/* CONTACT PAGE */
+
+.boardroom {
+	width: 100%;
+	padding: 50px 0;
+}
+.locaton {
+	border: 1px solid pink;
+	width: 40px;
+}
+.boxSix {
+	background-color: #f2f2f2;
+	float: left;
+	padding: 32px 0px;
+	margin-bottom: 160px;
+	margin-top: -45px;
+}
+.boxSix i{
+	color: darkgrey;
+	padding: 18px;
+}
+.boxSix p{
+	text-align: left;
+	padding: 0px 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: capitalize;
+	color: darkgrey;
+	letter-spacing: 1px;
+	font-size: 12px;
+}
+.yourName {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 20%;
+	margin-left: 20px;
+	padding: 17px;
+}
+.yourEmail {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-left: 20px;
+	width: 20%;
+	padding: 17px;
+}
+.yourSite {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-left: 20px;
+	width: 20%;
+	padding: 17px;
+}
+.yourReview {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-left: 20px;
+	padding:17px 366px 17px 17px;
+}
+.title {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-left: 20px;
+	padding:17px 366px 17px 17px;
+}
+.contactForm {
+	float: left;
+	width: 100%;
+}
+h4 {
+	font-family:'Roboto Slab', serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-left: 27%;
+}
+.submitButton {
+	background: white;
+	border: 2px solid darkgrey;
+	padding: 6px 40px;
+	margin: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+::-webkit-input-placeholder {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 10px;
+}
+
+/*FOOTER CONTENT*/
+
+footer{
+	color: black;
+	background-color: lightgrey;
+	clear: both;
+	height: 180px;
+	font-family:'Roboto Slab', serif;
+}
+a:hover i {
+	color: white;
+	font-size: 20px;
+}
+footer p {
+	float: left;
+	padding-left: 40px;
+	margin-top: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: .75rem;
+	letter-spacing: .110rem;
+	color: black;
+	clear: both;
+}
+.myButton {
+	-webkit-box-shadow: 1px 1px 5px 0px #dedede;
+	box-shadow: 1px 1px 5px 0px #dedede;
+	background-color:white;
+	border:.75px solid grey;
+	display:inline-block;
+	cursor:pointer;
+	color:Black;
+	font-family:'Roboto Slab', serif;
+	font-size:13px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	padding:25px 120px;
+	text-decoration:none;
+	margin: 55px 20px;
+	float: left;
+	width: 45%;
+}
+.myButton:hover {
+	background-color:#f6f6f6;
+}
+
+/*INFORMATION STYLES*/
+
+.information {
+	background: white;
+	clear: both;
+}
+.information ul {
+	list-style: none;
+	display: inline-table;
+	padding: 0;
+	margin: 42px 13px;
+}
+.information li p {
+	font-family: 'Montserrat' sans-serif;
+	font-size: 9px;
+	letter-spacing: 2px;
+	line-height: 0px;
+	text-transform: capitalize;
+	margin-right: 16px;	
+}
+.information li h3 {
+	font-family:'Roboto Slab', serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: black;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	margin-left: 40px;
+}
+.information p:hover {
+	color: black;
+	margin-left: 2px;
+}
+
+/*SOCIAL*/
+
+.contacts{
+	position: relative;
+	background-color: lightgrey;
+}
+.contacts i {
+	float: left;
+	margin: 15px;
+	color: darkgrey;
+	width: 2%;
+}
+.social {
+	list-style: none;
+	float: left;	
+}
+.social li {
+	float: left;
+}
+.contacts div {
+	float: left;
+}
+.contacts p {
+	font-family:'Roboto Slab', serif;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin-top: 33px;
+	margin-left:15px;
+}
+.contact {
+	padding-left: 200px;
+}
+
+/*SOCIAL TWO*/
+
+.contactsTwo{
+	position: relative;
+	background-color: lightgrey;
+}
+.contactsTwo i {
+	float: left;
+	margin: 15px 15px 0 ;
+	color: darkgrey;
+	width: 2%;
+}
+.topIcon {
+	padding-left: 290px;
+}
+.social li {
+	float: left;
+}
+.contactsTwo div {
+	padding-left: 0px;
+	clear: both;
+}
+.contactsTwo p {
+	font-family:'Roboto Slab', serif;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin-top: 33px;
+	margin-left:15px;
+}
+
+/*EMAIL FORM*/
+
+.form {
+    border-width: 1px; 
+    border-color: #CCCCCC;
+    border-style: solid; 
+    color: darkgrey;
+    font-size: 10px;
+    position: absolute;
+    top: 25px;
+    right: 250px;
+}
+.emailForm {
+	height: 25px;
+	width: 360px;
+}
+.copyright {
+	background: white;
+}
+.copyright p {
+	color: grey;
+	font-family: 'Montserrat' sans-serif;
+	font-size: .2rem;
+	text-transform: capitalize;
+	letter-spacing: .5px;
+	margin-left: 45%;
+	padding: 10px 0;
+	clear: both;
+}
+.copyrightTwo p {
+	color: grey;
+	font-family: 'Montserrat' sans-serif;
+	font-size: .2rem;
+	text-transform: capitalize;
+	letter-spacing: .5px;
+	padding: 0px ;
+	margin: 0 0 10px 10px;
+	width: 100%;
+	clear: both;
+}
+
